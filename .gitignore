@@ -1,0 +1,68 @@
+# Build directories
+/build/
+/build-*/
+/cmake-build-*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CPackConfig.cmake
+CPackSourceConfig.cmake
+CTestTestfile.cmake
+Makefile
+compile_commands.json
+install_manifest.txt
+
+# Visual Studio generated files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcxproj.*.user
+*.vc.db
+*.VC.db
+*.opendb
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Compiler / linker artifacts
+*.obj
+*.o
+*.lo
+*.gch
+*.pch
+*.pdb
+*.ilk
+*.idb
+*.lib
+*.a
+*.exp
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+
+# Test/log/temp artifacts
+*.log
+*.tmp
+*.temp
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Local runtime/storage data (keep folder, ignore contents)
+storage/*
+!storage/.gitkeep
