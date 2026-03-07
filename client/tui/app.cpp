@@ -39,11 +39,6 @@ namespace vault::client
         return Color::RGB(128, 128, 128);  // Gray
     }
 
-    static Color surface()
-    {
-        return Color::RGB(30, 30, 46);     // Dark surface
-    }
-
     // ─── Styled box helper ──────────────────────────────────────────────────────
 
     static Element styled_box(const std::string& title, Element content)

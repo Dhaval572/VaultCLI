@@ -24,22 +24,22 @@ namespace vault::client
         body["username"] = username;
         body["password"] = password;
 
-        auto res = cli.Post("/register", body.dump(), "application/json");
-        if (!res)
+        auto result = cli.Post("/register", body.dump(), "application/json");
+        if (!result)
         {
             return {false, "Cannot connect to server"};
         }
 
-        auto resp = json::parse(res->body, nullptr, false);
-        if (resp.is_discarded())
+        auto response = json::parse(result->body, nullptr, false);
+        if (response.is_discarded())
         {
             return {false, "Invalid server response"};
         }
 
         return 
         {
-            resp.value("success", false),
-            resp.value("message", "Unknown error")
+            response.value("success", false),
+            response.value("message", "Unknown error")
         };
     }
 
